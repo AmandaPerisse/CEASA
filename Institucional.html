@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>CEASA</title>
+        
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+
+        <script src="https://use.fontawesome.com/62e43a72a9.js"></script>
+        
+        
+    </head>
+	<body>
+
+<!-- Cabeçalho do site -->
+
+        <header class = "cabecalho">
+            <div id = "cabecalho">
+                <div class = "cabecalho-cinza">
+                    <div class = "cabecalho-cinza-completo">
+                        <div class = "linkGoverno-redesSociais">
+                            <ul id = "linkGoverno">
+                                <li>
+                                    <a href = "http://rj.gov.br/">rj.gov</a>
+                                </li>
+                            </ul>
+                            <div class = "index-redesSociais">
+                                <ul>
+                                    <li>
+                                        <a href = "https://www.instagram.com/govrj/"><img id = "redeSocial" src = "img/sm_instagram-ft.svg" alt = "Instagram"></a>
+                                    </li>
+                                    <li>
+                                        <a href = "https://www.facebook.com/governodorio"><img id = "redeSocial" src = "img/sm_facebook-ft.svg" alt = "Facebook"></a>
+                                    </li>
+                                    <li>
+                                        <a href = "https://twitter.com/GovRJ"><img id = "redeSocial" src = "img/sm_twitter-ft.svg" alt = "Twitter"></a>
+                                    </li>
+                                    <li>
+                                        <a href = "https://www.youtube.com/user/GovRJ"><img id = "redeSocial" src = "img/sm_youtube-ft.svg" alt = "Youtube"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class = "links">
+                            <ul>
+                                <li>
+                                    <a href = "http://www.rj.gov.br/coronavirus/default.html">Coronavírus</a>
+                                </li>
+                                <li>
+                                    <a href = "http://www.governoaberto.rj.gov.br/">Portal da Transparência</a>
+                                </li>
+                                <li>
+                                    <a href = "http://www.esicrj.rj.gov.br/">Acesso à Informação</a>
+                                </li>
+                                <li>
+                                    <a href = "https://falabr.cgu.gov.br/publico/RJ/Manifestacao/RegistrarManifestacao">Fala.BR</a>
+                                </li>
+                                <li>
+                                    <a href = "">Acessibilidade</a> <!-- TEM QUE AJEITAR-->
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class = "cabecalho-azul">
+                    <div class = "container cabecalho-azul-completo">
+                        <div class = "cabecalho-azul-completo-esquerda">
+                            <div id="hambtn">
+                                <a onclick="openNav()">☰</a>
+                            </div>
+                            <div class = "cabecalho-azul-logo">
+                                <a href = "index.html">
+                                    <img id = "logo-ceasa" src = "img/logotipo-ceasa.png" alt = "Ceasa">
+                                    <img id = "logo-governo" src = "img/logo-secretaria.png" alt = "Governo do Estado do Rio de Janeiro">
+                                </a>
+                            </div>
+                        </div>
+                        <div class = "cabecalho-azul-direita">
+                            <input type="text" class = "pesquisa" id="pesquisa" name="pesquisa" placeholder="Pesquise aqui">
+                            <button class = "cabecalho-azul-direita-botao" type="submit">
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                            </button>
+                            <div class = "cabecalho-azul-direita-redesSociais">
+                                <div class = "cabecalho-azul-direita-redesSociais-esquerda">
+                                    <a href = "https://www.instagram.com/govrj/"><img id = "redeSocial2" src = "img/sm_instagram-ft.svg" alt = "Instagram"></a>
+                                    <a href = "https://www.facebook.com/governodorio"><img id = "redeSocial2" src = "img/sm_facebook-ft.svg" alt = "Facebook"></a>
+                                    <a href = "https://twitter.com/GovRJ"><img id = "redeSocial2" src = "img/sm_twitter-ft.svg" alt = "Twitter"></a>
+                                    <a href = "https://www.youtube.com/user/GovRJ"><img id = "redeSocial2" src = "img/sm_youtube-ft.svg" alt = "Youtube"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section id="menu">
+                <div id="myNav" class="fundo-cinza" style="display: none;">
+                    <div class = "container">
+                        <div class="menu-overlay-content">
+                            <div class="menu-row">
+                                <div class="" id="close">
+                                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                                </div>
+                                <div class="menu-column" id="servicos">
+                                    <h4>SERVIÇOS</h4>
+                                    <ul>
+                                        <li><a href="boletos.html">Segunda Via <br>de Boletos</a></li>
+                                    </ul>
+                                </div>
+                                <div class="menu-column" id="informacoes">
+                                    <h4>INFORMAÇÕES</h4>
+                                    <ul>
+                                        <li><a href="links.html">Links</a></li>
+                                    </ul>
+                                </div>
+                                <div class="menu-column" id="imprensa">
+                                    <h4>IMPRENSA</h4>
+                                    <ul>
+                                        <li><a href="noticias.html">Notícias</a></li>
+                                        <li><a href="noticias40anos.html">CEASA 40 anos</a></li>
+                                    </ul>
+                                </div>
+                                <div class="menu-column" id="consulta">
+                                    <h4>CONSULTA</h4>
+                                    <ul>
+                                        <li><a href="cotacao.html">Cotação</a></li>
+                                        <li><a href="conjunturas.html">Conjunturas</a></li>
+                                        <li><a href="informativosMercado.html">Informativos</a></li>
+                                        <li><a href="">Calendário de <br>Comercialização</a></li>
+                                        <li><a href="contratosDespesas.html">Contratos e Despesas<br> com Covid-19</a></li>
+                                    </ul>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <script>
+                        function openNav() {
+                            document.getElementById("myNav").style.display = "block";
+                        }
+                
+                        function closeNav() {
+                            document.getElementById("myNav").style.display = "none";
+                        }
+                    </script>
+                </div>
+            </section>
+        </header>
+
+<!-- Conteúdo da página -->
+
+        <section class = "institucional-corpo">
+            <div class = "institucional-titulo-completo">
+                <div class = "container institucional-titulo">
+                    <h1>INSTITUCIONAL / Apresentação</h1>
+                </div>
+            </div>
+            <div class = "container institucional-texto">
+                <p>O alimento que brota no campo percorre um longo caminho até chegar à mesa dos cidadãos fluminenses. E a CEASA-RJ está presente nesse processo. Além de funcionar como único entreposto comercial público em todo o Estado, a CEASA-RJ desempenha, ainda, ações de segurança alimentar e nutricional, de fortalecimento da agricultura familiar, de controle sanitário e de resíduos de agrotóxicos, de responsabilidade social e ambiental junto às comunidades populares de seu entorno, dentre outras funções natureza pública.</p>
+                <br>
+                <p>A Centrais de Abastecimento do Estado do Rio de Janeiro CEASA-RJ é uma empresa vinculada à Secretaria de Estado de Agricultura, Pecuária, Pesca e Abastecimento. São seis unidades no Rio de Janeiro: Grande Rio, São Gonçalo, Região Serrana (Nova Friburgo), Região Noroeste Fluminense (Itaocara), Região Norte Fluminense (São José de Ubá) e Região Médio Paraíba (Paty do Alferes). A Unidade Grande Rio, localizada em Irajá, na Zona Norte da cidade, é a segunda maior Central de Abastecimento da América Latina. Somando-se todas as unidades, são cerca de 800 empresas instaladas e cerca de 2 mil produtores cadastrados. A empresa atua com responsabilidade no abastecimento alimentar da população fluminense, cumprindo sua missão de contribuir para a regularidade do abastecimento e garantia de renda ao produtor rural, participando e executando políticas agrícolas. A Central de Abastecimento faz serviços para identificar a origem dos produtos; incentiva à população local; cadastra os produtores, incentivando-os à comercialização nos mercados atacadistas e fomenta e possibilita o uso de embalagens adequadas. Informações de preços diários também fazem parte do trabalho.</p>
+                <br>
+                <p>A Central de Abastecimento fluminense se preocupa em viabilizar meios para que o pequeno produtor comercialize seus produtos diretamente no mercado, e ainda, inserindo-os em programas públicos, tais como Programa de Aquisição de Alimentos (PAA) e Programa Nacional de Alimentação Escolar (PNAE), através de assistência técnica.</p>
+                <br>
+            </div>
+            <div class = "container">
+                <form action = "" method= "">
+                    <div class = "institucional-input-btn">
+                        <input placeholder = "Insira um email para enviar esta notícia" id = "institucional-input"  type="email" name="email">
+                        <div class  = "institucional-btn">
+                            <input type="submit" class="institucional-btn1" onclick="Enviar();" value="Enviar" />
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div style = "margin-top: 50px;" class = "institucional-titulo-completo">
+                <div class = "container institucional-titulo">
+                    <h1>INSTITUCIONAL / Contatos</h1>
+                </div>
+            </div>
+            <div class = "container institucional-cards">
+                <div class = "institucional-card">
+                    <h2>Gabinete da Presidência</h2>
+                    <ul>
+                        <li>
+                            <h3>Diretor-Presidente:</h3>
+                        </li>
+                        <li>
+                            <p>Bianca Carvalho</p>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <h3>Tel.:</h3>
+                        </li>
+                        <li>
+                            <p>(21)2333-8276</p>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <h3>E-mail:</h3>
+                        </li>
+                        <li>
+                            <p><a href = "mailto:presidencia.ceasarj@gmail.com">presidencia.ceasarj@gmail.com</a></p>
+                        </li>
+                    </ul>
+                </div>
+                <div class = "institucional-card">
+                    <h2>Chefe de Gabinete</h2>
+                    <p>Leila R. Guimarães</p>
+                    <ul>
+                        <li>
+                            <h3>Tel.:</h3>
+                        </li>
+                        <li>
+                            <p>(21)2333-8289</p>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <h3>E-mail:</h3>
+                        </li>
+                        <li>
+                            <p><a href = "mailto:gabinete.ceasarj@gmail.com">gabinete.ceasarj@gmail.com</a></p>
+                        </li>
+                    </ul>
+                </div>
+                <div class = "institucional-card">
+                    <h2>Diretor Administrativo</h2>
+                    <p>Lauro Fabiano Ferreira</p>
+                    <ul>
+                        <li>
+                            <h3>Tel.:</h3>
+                        </li>
+                        <li>
+                            <p>(21)2333-8244</p>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <h3>E-mail:</h3>
+                        </li>
+                        <li>
+                            <p><a href = "mailto:diradceasarj@yahoo.com">diradceasarj@yahoo.com</a></p>
+                        </li>
+                    </ul>
+                </div>
+                <div class = "institucional-card">
+                    <h2>Diretoria de Orçamento e Finanças</h2>
+                    <p>Henar Washington de Almeida</p>
+                    <ul>
+                        <li>
+                            <h3>Tel.:</h3>
+                        </li>
+                        <li>
+                            <p>(21)2333-8244</p>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <h3>E-mail:</h3>
+                        </li>
+                        <li>
+                            <p><a href = "mailto:dirofceasa@yahoo.com.br">dirofceasa@yahoo.com.br</a></p>
+                        </li>
+                    </ul>
+                </div>
+                <div class = "institucional-card">
+                    <h2>Diretoria Operacional</h2>
+                    <p>Bianca de Carvalho</p>
+                    <ul>
+                        <li>
+                            <h3>Tel.:</h3>
+                        </li>
+                        <li>
+                            <p>(21)2333-8222</p>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <h3>E-mail:</h3>
+                        </li>
+                        <li>
+                            <p><a href = "mailto:unidadesdointerior.diopa3@gmail.com">unidadesdointerior.diopa3@gmail.com</a></p>
+                        </li>
+                    </ul>
+                </div>
+                <div class = "institucional-card">
+                    <h2>Diretoria Técnica</h2>
+                    <p>Carlos A.S. Quintanilha</p>
+                    <ul>
+                        <li>
+                            <h3>Tel.:</h3>
+                        </li>
+                        <li>
+                            <p>(21)2333-8288</p>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <h3>E-mail:</h3>
+                        </li>
+                        <li>
+                            <p><a href = "mailto:dirtec.ceasarj@gmail.com">dirtec.ceasarj@gmail.com</a></p>
+                        </li>
+                    </ul>
+                </div>
+                <div class = "institucional-card">
+                    <h2>Assessoria de Comunicação</h2>
+                    <p>Alex Melo</p>
+                    <ul>
+                        <li>
+                            <h3>Tel.:</h3>
+                        </li>
+                        <li>
+                            <p>(21)2333-8287</p>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <h3>E-mail:</h3>
+                        </li>
+                        <li>
+                            <p><a href = "ceasarj.comunicacao@gmail.com">ceasarj.comunicacao@gmail.com</a></p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div style = "margin-top: 50px;" class = "institucional-titulo-completo">
+                <div class = "container institucional-titulo">
+                    <h1>INSTITUCIONAL / Unidades</h1>
+                </div>
+            </div>
+            <div class = "institucional-unidades">
+                <div class = "institucional-unidade">
+                    <div class = "institucional-unidade-cima">
+                        <img id = "institucional-unidade-img" src = "img/carros.jfif">
+                        <div class = "institucional-unidade-texto">
+                            <h2>UNIDADE GRANDE RIO</h2>
+                            <ul style="padding: 5px 0px;">
+                                <li><h3>LOCALIZAÇÃO:</h3></li>
+                                <li><p>Avenida Brasil, nº 19.001 -Irajá - Rio de Janeiro-RJ - CEP. 21.530-900</p></li>
+                            </ul>
+                            <ul style="padding: 5px 0px;">
+                                <li><h3>ÁREA TOTAL:</h3></li>
+                                <li><p>2.146.253,0 m²</p></li>
+                            </ul>   
+                            <ul style="padding: 5px 0px;">
+                                <li><h3>ÁREA CONSTRUÍDA:</h3></li>
+                                <li><p>1.509.003 m²</p></li>
+                            </ul> 
+                            <ul style="padding: 5px 0px;">
+                                <li><h3>TELEFONE:</h3></li>
+                                <li><p>(21) 2333-8276</p></li>
+                            </ul>            
+                        </div>
+                    </div>
+                    <div class = "institucional-unidade-baixo">
+                        <p>
+                            Segunda maior Central de Abastecimento da América Latina, a unidade opera junto à sede da empresa, em Irajá, na Zona Norte do Rio. Desde o início de seu funcionamento, em 28 de agosto de 1974, a Unidade Grande Rio tem o papel estratégico de centralizar e coordenar a distribuição de gêneros hortigranjeiros e também é responsável por contribuir com a política de segurança alimentar e nutricional de todo o estado. Além dos serviços diretamente ligados à comercialização, baseia o Banco de Alimentos, o Mercado Livre do Produtor (Pavilhão 21) e um pavilhão dedicado exclusivamente ao pescado. São mais de 600 comerciantes e cerca de 2.500 produtores cadastrados, com média de 50 mil pessoas por dia circulando no espaço.
+                        </p>
+                        <br>     
+                        <p>
+                            Este gigante entreposto de comercialização possui um espaço de apoio exclusivo à Agricultura Familiar, através de uma parceria com a União das Cooperativas de Pequenos Produtores Rurais do Estado do Rio de Janeiro (Unacoop), com um pavilhão com área de comercialização de aproximadamente 1.900 metros quadrados.
+                        </p>  
+                        <br>
+                        <p>
+                            Pensando em aumentar a segurança dos comerciantes e usuários, a CEASA-RJ cedeu parte de sua unidade para a construção do 41º Batalhão de Polícia Militar e do 24º Quartel do Corpo de Bombeiros.
+                        </p> 
+                    </div>
+                    <div class = "unidade-horarioFuncionamento">
+                        <h3><strong>HORÁRIO DE ATENDIMENTO AO PÚBLICO</strong></h3>
+                        <ul style="padding: 5px 5px;">
+                            <li><h3>PEDRA:</h3></li>
+                            <li><p>Segunda a sábado, das 3h às 13h</p></li>
+                        </ul> 
+                        <ul style="padding: 5px 5px;">
+                            <li><h3>MERCADO:</h3></li>
+                            <li><p>Segunda a sábado, das 6h às 17h</p></li>
+                        </ul> 
+                        <ul style="padding: 5px 5px;">
+                            <li><h3>PESCADO:</h3></li>
+                            <li><p>Segunda a Sexta-feira, das 16h às 22h</p></li>
+                        </ul>
+                    </div> 
+                </div>
+                <div class = "institucional-unidade">
+                    <div class = "institucional-unidade-cima">
+                        <img id = "institucional-unidade-img" src = "img/homememulher.jpg">
+                        <div class = "institucional-unidade-texto">
+                            <h2>UNIDADE SÃO GONÇALO</h2>
+                            <ul style="padding: 5px 0px;">
+                                <li><h3>LOCALIZAÇÃO:</h3></li>
+                                <li><p>Rua Capitão Juvenal Figueiredo, 1.406 - Colubandê - São Gonçalo - RJ</p></li>
+                            </ul>
+                            <ul style="padding: 5px 0px;">
+                                <li><h3>CEP:</h3></li>
+                                <li><p>24744-560</p></li>
+                            </ul>   
+                            <ul style="padding: 5px 0px;">
+                                <li><h3>ÁREA TOTAL:</h3></li>
+                                <li><p>243.798 m²</p></li>
+                            </ul> 
+                            <ul style="padding: 5px 0px;">
+                                <li><h3>TELEFONE E FAX:</h3></li>
+                                <li><p>(21) 3715-2419</p></li>
+                            </ul>            
+                        </div>
+                    </div>
+                    <div class = "institucional-unidade-baixo">
+                        <p>
+                            Considerado o entreposto com maior potencial de crescimento do Estado, a Unidade São Gonçalo da CEASA-RJ cresce na mesma proporção que os municípios da Região Metropolitana do Rio. A unidade que está em funcionamento desde 11 de dezembro de 1972, opera de maneira a atender a comercialização de produtos hortigranjeiros destinados ao consumo dos municípios de São Gonçalo, Niterói, Magé, Itaboraí, Rio Bonito e outros em menor escala.
+                        </p>
+                        <br>     
+                        <p>
+                            A exemplo da Unidade Grande Rio, além dos serviços diretamente ligados à comercialização, a Unidade São Gonçalo proporciona a seus usuários serviços tais como; vigilância, comunicações, limpeza e lanchonetes, com a finalidade de fornecer o devido apoio às atividades comerciais.
+                        </p>  
+                        <br>
+                        <p>
+                            Possui 118 lojas comerciais e 250 produtores que atuam diretamente no Mercado Livre do Produtor. Parte do terreno da Central de Abastecimento foi cedida para a construção de um novo grupamento do Corpo de Bombeiros de São Gonçalo, do novo Fórum de Alcântara, da Defensoria Pública do Estado, do Ministério Público e do Hospital Estadual Alberto Torres. Com a segunda maior população do Estado do Rio, São Gonçalo necessitava de mais infraestrutura e a CEASA-RJ entendeu que esta contribuição estava ao alcance.
+                        </p> 
+                    </div>
+                    <div class = "unidade-horarioFuncionamento">
+                        <h3><strong>HORÁRIO DE ATENDIMENTO AO PÚBLICO</strong></h3>
+                        <ul style="padding: 5px 5px;">
+                            <li><p>Segunda a sábado, das 4h às 14h</p></li>
+                        </ul> 
+                    </div> 
+                </div>
+                <div class = "institucional-unidade">
+                    <div class = "institucional-unidade-cima">
+                        <img id = "institucional-unidade-img" src = "img/futas.jfif">
+                        <div class = "institucional-unidade-texto">
+                            <h2>UNIDADE NOROESTE FLUMINENSE (ITAOCARA)</h2>
+                            <ul style="padding: 5px 0px;">
+                                <li><h3>LOCALIZAÇÃO:</h3></li>
+                                <li><p>Estrada Ponto de Pergunta RJ 192 KM 0 – Jaguarembe – Itaocara</p></li>
+                            </ul>
+                            <ul style="padding: 5px 0px;">
+                                <li><h3>CEP:</h3></li>
+                                <li><p>28575-000</p></li>
+                            </ul>   
+                            <ul style="padding: 5px 0px;">
+                                <li><h3>TELEFONE:</h3></li>
+                                <li><p>(22) 3863-1112</p></li>
+                            </ul>            
+                        </div>
+                    </div>
+                    <div class = "institucional-unidade-baixo">
+                        <p>
+                            Inaugurada em 06 de novembro de 1982, a Unidade Noroeste Fluminense, localizada em Itaocara, possui infraestrutura para atender as cidades de Cardoso Moreira, São José de Ubá, Aperibe, São Fidelis, Italva, Sebastião do Alto, Santo Antônio de Pádua, Cambuci, Itaperuna, Miracema e Natividade.
+                        </p>
+                        <br>
+                        <p>
+                            Os principais produtos comercializados na Unidade são: Tomate, Abobrinha, Batata doce, Mana, Pepino, Berinjela, Jiló, Maracujá, Maxixe, Pimentão, Quiabo e Vagem.
+                        </p>
+                    </div>
+                    <div class = "unidade-horarioFuncionamento">
+                        <h3><strong>HORÁRIO DE ATENDIMENTO AO PÚBLICO</strong></h3>
+                        <ul style="padding: 5px 5px;">
+                            <li><p>Segunda e quinta-feira, das 9h às 21h</p></li>
+                        </ul> 
+                    </div> 
+                </div>
+                <div class = "institucional-unidade">
+                    <div class = "institucional-unidade-cima">
+                        <img id = "institucional-unidade-img" src = "img/alface.jpg">
+                        <div class = "institucional-unidade-texto">
+                            <h2>UNIDADE REGIÃO SERRANA(NOVA FRIBURGO)</h2>
+                            <ul style="padding: 5px 0px;">
+                                <li><h3>LOCALIZAÇÃO:</h3></li>
+                                <li><p>Rodovia Teresópolis / Nova Friburgo 130 - KM 47,5 - Nova Friburgo - RJ</p></li>
+                            </ul>
+                            <ul style="padding: 5px 0px;">
+                                <li><h3>CEP:</h3></li>
+                                <li><p>28630-250</p></li>
+                            </ul>   
+                            <ul style="padding: 5px 0px;">
+                                <li><h3>ÁREA TOTAL:</h3></li>
+                                <li><p>80.831 m²</p></li>
+                            </ul> 
+                            <ul style="padding: 5px 0px;">
+                                <li><h3>TELEFONE:</h3></li>
+                                <li><p>(22) 2529-4067</p></li>
+                            </ul>             
+                        </div>
+                    </div>
+                    <div class = "institucional-unidade-baixo">
+                        <p>
+                            Está localizada no distrito de Conquista. Com localização estratégica fica na RJ 130, na altura do KM 47,5, entre os municípios de Teresópolis e Nova Friburgo.
+                        </p>
+                        <br>
+                        <p>
+                            Inaugurado em 17 de Dezembro de 1977, esse Mercado absorve boa parte da produção dos municípios de Nova Friburgo, Bom Jardim, Teresópolis, Sumidouro, Trajano de Morais. Região que mais produz folhosas do Estado do Rio de Janeiro, o entreposto dá apoio aos consumidores, contando com diversas lojas de insumos.
+                        </p>
+                        <br>
+                        <p>
+                            A Unidade é um importante ponto de apoio para agricultura familiar da região, uma vez que predomina a atuação de pequenos produtores rurais.
+                        </p>
+                    </div>
+                    <div class = "unidade-horarioFuncionamento">
+                        <h3><strong>HORÁRIO DE ATENDIMENTO AO PÚBLICO</strong></h3>
+                        <ul style="padding: 5px 5px;">
+                            <li><p>Terça, quinta e sábado, das 7h às 17h</p></li>
+                        </ul> 
+                    </div> 
+                </div>
+                <div class = "institucional-unidade">
+                    <div class = "institucional-unidade-cima">
+                        <img id = "institucional-unidade-img" src = "img/carros.jfif">
+                        <div class = "institucional-unidade-texto">
+                            <h2>UNIDADE MÉDIO PARAÍBA(PATY DO ALFERES)</h2>
+                            <ul style="padding: 5px 0px;">
+                                <li><h3>LOCALIZAÇÃO:</h3></li>
+                                <li><p>Alameda Embaixador Carlos Magno s/nº - Arcozelo Paty do Alferes - RJ</p></li>
+                            </ul>
+                            <ul style="padding: 5px 0px;">
+                                <li><h3>CEP:</h3></li>
+                                <li><p>26950-000</p></li>
+                            </ul>   
+                            <ul style="padding: 5px 0px;">
+                                <li><h3>ÁREA TOTAL:</h3></li>
+                                <li><p>50.004 m²</p></li>
+                            </ul> 
+                            <ul style="padding: 5px 0px;">
+                                <li><h3>TELEFONE:</h3></li>
+                                <li><p>(24) 2485-3200</p></li>
+                            </ul>             
+                        </div>
+                    </div>
+                    <div class = "institucional-unidade-baixo">
+                        <p>
+                            A história da unidade caminha lado a lado com o município de Paty do Alferes. Muitos acreditam que a presença da CEASA-RJ foi fundamental para a emancipação do município, ocorrida em 1987, já que com os dados estatísticos da Central de Abastecimento Paty pôde comprovar renda e se emancipar.
+                        </p>
+                        <br>
+                        <p>
+                            O Mercado é muito bem localizado, pois se encontra no perímetro do município e com uma infraestrutura em condições de atender a comercialização da produção das cidades do entorno, como: Miguel Pereira, Paraíba do Sul, Três Rios, Vassouras, Petrópolis. A partir de um convênio assinado em 2011, a gestão da unidade passou a ser compartilhado entre a CEASA-RJ e Prefeitura.
+                        </p>
+                    </div>
+                    <div class = "unidade-horarioFuncionamento">
+                        <h3><strong>HORÁRIO DE ATENDIMENTO AO PÚBLICO</strong></h3>
+                        <ul style="padding: 5px 5px;">
+                            <li><p>Quarta-feira, das 9h às 17h</p></li>
+                        </ul> 
+                    </div> 
+                </div>
+                <div class = "institucional-unidade">
+                    <div class = "institucional-unidade-cima">
+                        <img id = "institucional-unidade-img" src = "img/homememulher.jpg">
+                        <div class = "institucional-unidade-texto">
+                            <h2>UNIDADE NORTE FLUMINENSE(SÃO JOSÉ DE UBA)</h2>
+                            <ul style="padding: 5px 0px;">
+                                <li><h3>LOCALIZAÇÃO:</h3></li>
+                                <li><p>Avenida 15 de Novembro, s/nº - São José de Ubá - RJ</p></li>
+                            </ul>
+                            <ul style="padding: 5px 0px;">
+                                <li><h3>CEP:</h3></li>
+                                <li><p>28455-000</p></li>
+                            </ul>   
+                            <ul style="padding: 5px 0px;">
+                                <li><h3>ÁREA TOTAL:</h3></li>
+                                <li><p>25.000 m²</p></li>
+                            </ul> 
+                            <ul style="padding: 5px 0px;">
+                                <li><h3>TELEFONE:</h3></li>
+                                <li><p>(24) 2866-1133</p></li>
+                            </ul>             
+                        </div>
+                    </div>
+                    <div class = "institucional-unidade-baixo">
+                        <p>
+                            Localizada no município de São José de Ubá, o entreposto possui infraestrutura para atender Santo Antônio de Pádua, Cambuci, Itaperuna, Miracema, Itaocara, Natividade e outros municípios da região.
+                        </p>
+                        <br>
+                        <p>
+                            Tendo característica a sazonalidade da produção regional que é a cultura do tomate nos meses de maio a outubro.
+                        </p>
+                        <br>
+                        <p>
+                            A unidade foi inaugurada em 6 de abril de 1978. A partir de um convênio assinado em 2012, a gestão da unidade passou a ser compartilhado entre a CEASA-RJ e Prefeitura.
+                        </p>
+                    </div>
+                    <div class = "unidade-horarioFuncionamento">
+                        <h3><strong>HORÁRIO DE ATENDIMENTO AO PÚBLICO</strong></h3>
+                        <ul style="padding: 5px 5px;">
+                            <li><p>Quarta-feira, das 12h às 17h, e Domingo, das 10h30min às 17h</p></li>
+                        </ul> 
+                    </div> 
+                </div>
+            </div>
+            <div style = "margin-top: 50px;" class = "institucional-titulo-completo">
+                <div class = "container institucional-titulo">
+                    <h1>INSTITUCIONAL / Organograma</h1>
+                </div>
+            </div>
+            <div style = "margin-top: 50px;" class = "institucional-titulo-completo">
+                <div class = "container institucional-titulo">
+                    <h1>INSTITUCIONAL / Documentos para Download</h1>
+                </div>
+            </div>
+            <div class = "container institucional-documentos">
+                <ul>
+                    <li>
+                        <p><strong><a href = "">Competências – Regime Interno</a></strong></p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+<!-- Footer -->
+
+        <footer>
+            <div class = "rodape">
+                <div class = "rodape-completo">
+                    <div class = "rodape-logo">
+                        <img id = "rodape-logo-governo" src = "img/logo-secretaria.png">
+                    </div>
+                    <div class = "rodape-logo">
+                        <img id = "rodape-logo-proderj" src = "img/tecnologia_proderj_negativo.png">
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

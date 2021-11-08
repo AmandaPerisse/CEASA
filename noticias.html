@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>CEASA</title>
+        
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+        
+        <script src="https://use.fontawesome.com/62e43a72a9.js"></script>
+    </head>
+	<body>
+
+<!-- Cabeçalho do site -->
+
+        <header class = "cabecalho">
+            <div id = "cabecalho">
+                <div class = "cabecalho-cinza">
+                    <div class = "cabecalho-cinza-completo">
+                        <div class = "linkGoverno-redesSociais">
+                            <ul id = "linkGoverno">
+                                <li>
+                                    <a href = "http://rj.gov.br/">rj.gov</a>
+                                </li>
+                            </ul>
+                            <div class = "index-redesSociais">
+                                <ul>
+                                    <li>
+                                        <a href = "https://www.instagram.com/govrj/"><img id = "redeSocial" src = "img/sm_instagram-ft.svg" alt = "Instagram"></a>
+                                    </li>
+                                    <li>
+                                        <a href = "https://www.facebook.com/governodorio"><img id = "redeSocial" src = "img/sm_facebook-ft.svg" alt = "Facebook"></a>
+                                    </li>
+                                    <li>
+                                        <a href = "https://twitter.com/GovRJ"><img id = "redeSocial" src = "img/sm_twitter-ft.svg" alt = "Twitter"></a>
+                                    </li>
+                                    <li>
+                                        <a href = "https://www.youtube.com/user/GovRJ"><img id = "redeSocial" src = "img/sm_youtube-ft.svg" alt = "Youtube"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class = "links">
+                            <ul>
+                                <li>
+                                    <a href = "http://www.rj.gov.br/coronavirus/default.html">Coronavírus</a>
+                                </li>
+                                <li>
+                                    <a href = "http://www.governoaberto.rj.gov.br/">Portal da Transparência</a>
+                                </li>
+                                <li>
+                                    <a href = "http://www.esicrj.rj.gov.br/">Acesso à Informação</a>
+                                </li>
+                                <li>
+                                    <a href = "https://falabr.cgu.gov.br/publico/RJ/Manifestacao/RegistrarManifestacao">Fala.BR</a>
+                                </li>
+                                <li>
+                                    <a href = "">Acessibilidade</a> <!-- TEM QUE AJEITAR-->
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class = "cabecalho-azul">
+                    <div class = "container cabecalho-azul-completo">
+                        <div class = "cabecalho-azul-completo-esquerda">
+                            <div id="hambtn">
+                                <a onclick="openNav()">☰</a>
+                            </div>
+                            <div class = "cabecalho-azul-logo">
+                                <a href = "index.html">
+                                    <img id = "logo-ceasa" src = "img/logotipo-ceasa.png" alt = "Ceasa">
+                                    <img id = "logo-governo" src = "img/logo-secretaria.png" alt = "Governo do Estado do Rio de Janeiro">
+                                </a>
+                            </div>
+                        </div>
+                        <div class = "cabecalho-azul-direita">
+                            <input type="text" class = "pesquisa" id="pesquisa" name="pesquisa" placeholder="Pesquise aqui">
+                            <button class = "cabecalho-azul-direita-botao" type="submit">
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                            </button>
+                            <div class = "cabecalho-azul-direita-redesSociais">
+                                <div class = "cabecalho-azul-direita-redesSociais-esquerda">
+                                    <a href = "https://www.instagram.com/govrj/"><img id = "redeSocial2" src = "img/sm_instagram-ft.svg" alt = "Instagram"></a>
+                                    <a href = "https://www.facebook.com/governodorio"><img id = "redeSocial2" src = "img/sm_facebook-ft.svg" alt = "Facebook"></a>
+                                    <a href = "https://twitter.com/GovRJ"><img id = "redeSocial2" src = "img/sm_twitter-ft.svg" alt = "Twitter"></a>
+                                    <a href = "https://www.youtube.com/user/GovRJ"><img id = "redeSocial2" src = "img/sm_youtube-ft.svg" alt = "Youtube"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section id="menu">
+                <div id="myNav" class="fundo-cinza" style="display: none;">
+                    <div class = "container">
+                        <div class="menu-overlay-content">
+                            <div class="menu-row">
+                                <div class="" id="close">
+                                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                                </div>
+                                <div class="menu-column" id="servicos">
+                                    <h4>SERVIÇOS</h4>
+                                    <ul>
+                                        <li><a href="boletos.html">Segunda Via <br>de Boletos</a></li>
+                                    </ul>
+                                </div>
+                                <div class="menu-column" id="informacoes">
+                                    <h4>INFORMAÇÕES</h4>
+                                    <ul>
+                                        <li><a href="links.html">Links</a></li>
+                                    </ul>
+                                </div>
+                                <div class="menu-column" id="imprensa">
+                                    <h4>IMPRENSA</h4>
+                                    <ul>
+                                        <li><a href="noticias.html">Notícias</a></li>
+                                        <li><a href="noticias40anos.html">CEASA 40 anos</a></li>
+                                    </ul>
+                                </div>
+                                <div class="menu-column" id="consulta">
+                                    <h4>CONSULTA</h4>
+                                    <ul>
+                                        <li><a href="cotacao.html">Cotação</a></li>
+                                        <li><a href="conjunturas.html">Conjunturas</a></li>
+                                        <li><a href="informativosMercado.html">Informativos</a></li>
+                                        <li><a href="">Calendário de <br>Comercialização</a></li>
+                                        <li><a href="contratosDespesas.html">Contratos e Despesas<br> com Covid-19</a></li>
+                                    </ul>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <script>
+                        function openNav() {
+                            document.getElementById("myNav").style.display = "block";
+                        }
+                
+                        function closeNav() {
+                            document.getElementById("myNav").style.display = "none";
+                        }
+                    </script>
+                </div>
+            </section>
+        </header>
+
+<!-- Conteúdo da página -->
+
+        <section class = "noticias-corpo">
+            <div class = "noticias-titulo-completo">
+                <div class = "container noticias-titulo">
+                    <h1>IMPRENSA / Notícias</h1>
+                </div>
+            </div>
+            <div class = "noticias">
+                <div class = "container noticias-cards-completo">
+                    <div class = "noticias-cards-img">
+                        <img src = "img/carros.jfif">
+                    </div>
+                    <div class = "noticias-cards-textos">
+                        <h3>NOVA CHAMADA PÚBLICA</h3>
+                        <h1 style = "color: black; margin: 20px 0px;">Ceasa/RJ doa 7 toneladas de alimentos em 2 dias para instituições socioassistenciais</h1>
+                        <p>Entidades que quiserem receber devem participar de um Chamamento Público até o dia 16 de agosto</p>
+                        <p style="font-size: 12px; margin: 10px 0px;"><i>02/08/2021 14:17 por: Fulaninho de tal</i></p>
+                        <div class="noticias-btn">
+                            <button class="noticias-btn1">
+                                <a id="A4" href="noticiaCompleta.html">Notícia Completa</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class = "noticias">
+                <div class = "container noticias-cards-completo">
+                    <div class = "noticias-cards-img">
+                        <img src = "img/futas.jfif">
+                    </div>
+                    <div class = "noticias-cards-textos">
+                        <h3>PAA Emergencial</h3>
+                        <h1 style = "color: black; margin: 20px 0px;">Ceasa/RJ compra 12 toneladas de alimentos e doa para instituições socioassistenciais</h1>
+                        <p>Ação faz parte da modalidade Compra com Doação Simultânea do Programa de Aquisição de Alimentos(PAA Emergencial).</p>
+                        <p style="font-size: 12px; margin: 10px 0px;"><i>02/08/2021 14:17 por: Fulaninho de tal</i></p>
+                        <div class="noticias-btn">
+                            <button class="noticias-btn1">
+                                <a id="A4" href="noticiaCompleta.html">Notícia Completa</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!-- Footer -->
+
+        <footer>
+            <div class = "rodape">
+                <div class = "rodape-completo">
+                    <div class = "rodape-logo">
+                        <img id = "rodape-logo-governo" src = "img/logo-secretaria.png">
+                    </div>
+                    <div class = "rodape-logo">
+                        <img id = "rodape-logo-proderj" src = "img/tecnologia_proderj_negativo.png">
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CEASA</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+
+    <script src="https://use.fontawesome.com/62e43a72a9.js"></script>
+
+
+</head>
+
+<body>
+
+    <!-- Cabeçalho do site -->
+
+    <header class = "cabecalho">
+        <div id = "cabecalho">
+            <div class = "cabecalho-cinza">
+                <div class = "cabecalho-cinza-completo">
+                    <div class = "linkGoverno-redesSociais">
+                        <ul id = "linkGoverno">
+                            <li>
+                                <a href = "http://rj.gov.br/">rj.gov</a>
+                            </li>
+                        </ul>
+                        <div class = "index-redesSociais">
+                            <ul>
+                                <li>
+                                    <a href = "https://www.instagram.com/govrj/"><img id = "redeSocial" src = "img/sm_instagram-ft.svg" alt = "Instagram"></a>
+                                </li>
+                                <li>
+                                    <a href = "https://www.facebook.com/governodorio"><img id = "redeSocial" src = "img/sm_facebook-ft.svg" alt = "Facebook"></a>
+                                </li>
+                                <li>
+                                    <a href = "https://twitter.com/GovRJ"><img id = "redeSocial" src = "img/sm_twitter-ft.svg" alt = "Twitter"></a>
+                                </li>
+                                <li>
+                                    <a href = "https://www.youtube.com/user/GovRJ"><img id = "redeSocial" src = "img/sm_youtube-ft.svg" alt = "Youtube"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class = "links">
+                        <ul>
+                            <li>
+                                <a href = "http://www.rj.gov.br/coronavirus/default.html">Coronavírus</a>
+                            </li>
+                            <li>
+                                <a href = "http://www.governoaberto.rj.gov.br/">Portal da Transparência</a>
+                            </li>
+                            <li>
+                                <a href = "http://www.esicrj.rj.gov.br/">Acesso à Informação</a>
+                            </li>
+                            <li>
+                                <a href = "https://falabr.cgu.gov.br/publico/RJ/Manifestacao/RegistrarManifestacao">Fala.BR</a>
+                            </li>
+                            <li>
+                                <a href = "">Acessibilidade</a> <!-- TEM QUE AJEITAR-->
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class = "cabecalho-azul">
+                <div class = "container cabecalho-azul-completo">
+                    <div class = "cabecalho-azul-completo-esquerda">
+                        <div id="hambtn">
+                            <a onclick="openNav()">☰</a>
+                        </div>
+                        <div class = "cabecalho-azul-logo">
+                            <a href = "index.html">
+                                <img id = "logo-ceasa" src = "img/logotipo-ceasa.png" alt = "Ceasa">
+                                <img id = "logo-governo" src = "img/logo-secretaria.png" alt = "Governo do Estado do Rio de Janeiro">
+                            </a>
+                        </div>
+                    </div>
+                    <div class = "cabecalho-azul-direita">
+                        <input type="text" class = "pesquisa" id="pesquisa" name="pesquisa" placeholder="Pesquise aqui">
+                        <button class = "cabecalho-azul-direita-botao" type="submit">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </button>
+                        <div class = "cabecalho-azul-direita-redesSociais">
+                            <div class = "cabecalho-azul-direita-redesSociais-esquerda">
+                                <a href = "https://www.instagram.com/govrj/"><img id = "redeSocial2" src = "img/sm_instagram-ft.svg" alt = "Instagram"></a>
+                                <a href = "https://www.facebook.com/governodorio"><img id = "redeSocial2" src = "img/sm_facebook-ft.svg" alt = "Facebook"></a>
+                                <a href = "https://twitter.com/GovRJ"><img id = "redeSocial2" src = "img/sm_twitter-ft.svg" alt = "Twitter"></a>
+                                <a href = "https://www.youtube.com/user/GovRJ"><img id = "redeSocial2" src = "img/sm_youtube-ft.svg" alt = "Youtube"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section id="menu">
+            <div id="myNav" class="fundo-cinza" style="display: none;">
+                <div class = "container">
+                    <div class="menu-overlay-content">
+                        <div class="menu-row">
+                            <div class="" id="close">
+                                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                            </div>
+                            <div class="menu-column" id="servicos">
+                                <h4>SERVIÇOS</h4>
+                                <ul>
+                                    <li><a href="boletos.html">Segunda Via <br>de Boletos</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu-column" id="informacoes">
+                                <h4>INFORMAÇÕES</h4>
+                                <ul>
+                                    <li><a href="links.html">Links</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu-column" id="imprensa">
+                                <h4>IMPRENSA</h4>
+                                <ul>
+                                    <li><a href="noticias.html">Notícias</a></li>
+                                    <li><a href="noticias40anos.html">CEASA 40 anos</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu-column" id="consulta">
+                                <h4>CONSULTA</h4>
+                                <ul>
+                                    <li><a href="cotacao.html">Cotação</a></li>
+                                    <li><a href="conjunturas.html">Conjunturas</a></li>
+                                    <li><a href="informativosMercado.html">Informativos</a></li>
+                                    <li><a href="">Calendário de <br>Comercialização</a></li>
+                                    <li><a href="contratosDespesas.html">Contratos e Despesas<br> com Covid-19</a></li>
+                                </ul>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    function openNav() {
+                        document.getElementById("myNav").style.display = "block";
+                    }
+            
+                    function closeNav() {
+                        document.getElementById("myNav").style.display = "none";
+                    }
+                </script>
+            </div>
+        </section>
+    </header>
+
+    <!-- Conteúdo da página -->
+
+    <section class="perguntasFrequentes-corpo">
+        <div class="perguntasFrequentes-titulo-completo">
+            <div class="container perguntasFrequentes-titulo">
+                <h1>PERGUNTAS FREQUENTES</h1>
+            </div>
+        </div>
+        <div class="container perguntasFrequentes-texto">
+            <div class="accordion">
+                <input type="radio" name="radio-a" id="check1" checked>
+                <label class="accordion-label" for="check1">Que tipo de empresa é a CEASA-RJ?</label>
+                <div class="accordion-content">
+                    <p>A Centrais de Abastecimento do Estado do Rio de Janeiro CEASA-RJ é uma empresa de economia mista vinculada à Secretaria de Estado de Agricultura, Pecuária, Pesca e Abastecimento.</p>
+                </div>
+            </div>
+            <div class="accordion">
+                <input type="radio" name="radio-a" id="check2">
+                <label class="accordion-label" for="check2">Qual o horário de funcionamento da Unidade GRANDE Rio?</label>
+                <div class="accordion-content">
+                    <p>Horário de atendimento ao público: 6h às 17h, de segunda a sábado.</p>
+                    <br>
+                    <p>Pescado : 16h às 22h, de segunda a sexta-feira.</p>
+                </div>
+            </div>
+            <div class="accordion">
+                <input type="radio" name="radio-a" id="check3">
+                <label class="accordion-label" for="check3">Em que cidades a CEASA-RJ se encontra?</label>
+                <div class="accordion-content">
+                    <p>São seis unidades no Rio de Janeiro: Irajá (Capital), São Gonçalo (Região Metropolitana), Nova Friburgo (Região Serrana), Itaocara (Região Noroeste Fluminense), São José de Ubá (Região Norte Fluminense) e Paty do Alferes (Região Médio Paraíba).</p>
+                </div>
+            </div>
+            <div class="accordion">
+                <input type="radio" name="radio-a" id="check4">
+                <label class="accordion-label" for="check4">Como funciona o comercio varejista?</label>
+                <div class="accordion-content">
+                    <p>Via de regra funciona como atacado, havendo exceções em alguns casos.</p>
+                </div>
+            </div>
+            <div class="accordion">
+                <input type="radio" name="radio-a" id="check5">
+                <label class="accordion-label" for="check5">Quais as principais atividades da CEASA-RJ?</label>
+                <div class="accordion-content">
+                    <p>Único entreposto comercial público em todo o Estado, a CEASA-RJ desempenha ações de segurança alimentar e nutricional, de fortalecimento da agricultura familiar, de controle sanitário e de resíduos de agrotóxicos, de responsabilidade social e ambiental junto às comunidades populares de seu entorno, dentre outras funções de natureza pública.</p>
+                </div>
+            </div>
+            <div class="accordion">
+                <input type="radio" name="radio-a" id="check6">
+                <label class="accordion-label" for="check6">Recebe visitas? Como funciona?</label>
+                <div class="accordion-content">
+                    <p>Depende do tipo de visita, em todo caso, necessita ser realizado um pedido ao setor de comunição. Mais informacoes, entrar em contato pelo telefone: (21) 2333-8287.</p>
+                </div>
+            </div>
+            <div class="accordion">
+                <input type="radio" name="radio-a" id="check7">
+                <label class="accordion-label" for="check7">Como faço para consultar os preços dos produtos?</label>
+                <div class="accordion-content">
+                    <p>Você pode conferir a cotação dos produtos através deste <a href = "">link</a></p>
+                </div>
+            </div>
+            <div class="accordion">
+                <input type="radio" name="radio-a" id="check8">
+                <label class="accordion-label" for="check8">Quais lojas estão na CEASA-RJ?</label>
+                <div class="accordion-content">
+                    <p>Nos entrepostos da CEASA-RJ temos lojas de segmentos variados. Acesse o <a href = "">link</a> e encontre o que procura.</p>
+                </div>
+            </div>
+            <div class="accordion">
+                <input type="radio" name="radio-a" id="check9">
+                <label class="accordion-label" for="check9">Existe algum programa social na CEASA-RJ?</label>
+                <div class="accordion-content">
+                    <p>A CEASA-RJ possui três programas sociais: Banco de Alimentos, Programa de Aquisição de Alimentos (PAA) e Residência em Engenharia Agronômica</p>
+                    <br>
+                    <p><a href = "">Saiba Mais</a></p>
+                </div>
+            </div>
+            <div class="accordion">
+                <input type="radio" name="radio-a" id="check10">
+                <label class="accordion-label" for="check10">Como faço para trabalhar em uma loja da CEASA-RJ?</label>
+                <div class="accordion-content">
+                    <p>Cada lojista possui sua política de recursos humanos. Entre em contato com a loja pretendida para saber mais informações sobre contratação.</p>
+                </div>
+            </div>
+            <div class="accordion">
+                <input type="radio" name="radio-a" id="check11">
+                <label class="accordion-label" for="check11">Tem estacionamento no entreposto?</label>
+                <div class="accordion-content">
+                    <p>A Unidade conta com 7 estacionamentos.</p>
+                </div>
+            </div>
+            <div class="accordion">
+                <input type="radio" name="radio-a" id="check12">
+                <label class="accordion-label" for="check12">A CEASA-RJ oferece visita guiada?</label>
+                <div class="accordion-content">
+                    <p>De acordo com o interesse do grupo de visitantes, há o acompanhamento de técnicos e especialistas da CEASA-RJ.</p>
+                    <br>
+                    <p>A visita deve ser agendada com pelo menos uma semana de antecedência através do e-mail: <a href = "mailto:ceasarj.comunicacao@gmail.com">ceasarj.comunicacao@gmail.com</a></p>
+                    <br>
+                    <p>Documentos que devem ser anexados ao e-mail:</p>
+                    <ul>
+                        <li>
+                            <p>Carta ofício da instituição com o objetivo da visita</p>
+                        </li>
+                        <li>
+                            <p>Cópia simples do documento de identificação com foto do responsável pelo grupo</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="accordion">
+                <input type="radio" name="radio-a" id="check13">
+                <label class="accordion-label" for="check13">Como vender na CEASA-RJ?</label>
+                <div class="accordion-content">
+                    <p>Não é permitida a venda autônoma, a única forma de realizar qualquer tipo de comércio dentro da CEASA-RJ é tornando-se permissionário. Inclusive, tem várias placas sinalizando que não é permitido ambulante.</p>
+                </div>
+            </div>
+            <div class="accordion">
+                <input type="radio" name="radio-a" id="check14">
+                <label class="accordion-label" for="check14">Como ter um espaço de venda?</label>
+                <div class="accordion-content">
+                    <p>Para possuir um espaço, no caso, um box, precisa ser através de edital, que a CEASA-RJ disponibiliza no site, quando surge um espaço disponível.</p>
+                </div>
+            </div>
+            <div class="accordion">
+                <input type="radio" name="radio-a" id="check15">
+                <label class="accordion-label" for="check15">Qual é o vínculo profissional dos carregadores? E como fazer o cadastro?</label>
+                <div class="accordion-content">
+                    <p>A CEASA-RJ não possui vínculo com os carregadores, pois eles fazem parte de uma associação autônoma - ACCERJ. Mais informações, entrar em contato pelo telefone: (21) 98449-9032.</p>
+                </div>
+            </div>
+            <div class="accordion">
+                <input type="radio" name="radio-a" id="check16">
+                <label class="accordion-label" for="check16">Ações de sustentabilidade?</label>
+                <div class="accordion-content">
+                    <p>A CEASA-RJ possui uma estação de tratamento de esgoto com:</p>
+                    <ul>
+                        <li>
+                            <p>3 tanques de agua de reuso</p>
+                        </li>
+                        <li>
+                            <p>20 mil litros de capacitação e armazenamento por tanque</p>
+                        </li>
+                        <li>
+                            <p>1 sistema de reuso de volume total de 60 m3, que permite tratar cerca de 18 mil m3 da água de esgoto do mercado por mês</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <h2 style="margin: 50px 0px;">Pavilhão de Pescado - Pavilhão 12</h2>
+            <div class="accordion">
+                <input type="radio" name="radio-a" id="check17">
+                <label class="accordion-label" for="check17">Como entrar em contato com o Pavilhão de Pescado?</label>
+                <div class="accordion-content">
+                    <p>Através do telefone: (21) 2471-6284.</p>
+                </div>
+            </div>
+            <div class="accordion">
+                <input type="radio" name="radio-a" id="check18">
+                <label class="accordion-label" for="check18">Como funciona a venda? É por atacado, varejo ou lote?</label>
+                <div class="accordion-content">
+                    <p>Caixa de 18 e 20 kg para camarão e caixa de 20kg para peixes (somente atacado).</p>
+                </div>
+            </div>
+            <div class="accordion">
+                <input type="radio" name="radio-a" id="check19">
+                <label class="accordion-label" for="check19">Tem quantidade mínima ou máxima para compra?</label>
+                <div class="accordion-content">
+                    <p>Possui apenas o mínimo, sendo este 18kg ou 20kg.</p>
+                </div>
+            </div>
+            <div class="accordion">
+                <input type="radio" name="radio-a" id="check20">
+                <label class="accordion-label" for="check20">Quais os produtos que são comercializados atualmente e sua origem?</label>
+                <div class="accordion-content">
+                    <p>Todos os tipos de pescados nacionais e importados, vindos do sul do país, como Santa Catarina e Rio Grande do Sul, além de Minas Gerais e São Paulo.</p>
+                </div>
+            </div>
+            <div class="accordion">
+                <input type="radio" name="radio-a" id="check21">
+                <label class="accordion-label" for="check21">Existe forma diferente de vendas para grandes compradores?</label>
+                <div class="accordion-content">
+                    <p>Sim, existe um procedimento diferenciado para pessoas que compram em grande quantidade. Para mais informações entrar em contato com o telefone disponibilizado no item i.</p>
+                </div>
+            </div>
+            <div class="accordion">
+                <input type="radio" name="radio-a" id="check22">
+                <label class="accordion-label" for="check22">Existe vestimenta específica para fazer as compras? Possui algum tipo de fiscalização para estas vestimentas?</label>
+                <div class="accordion-content">
+                    <p>A roupa adequada para a realização das compras no local é calças compridas e sapatos, sendo proibida a entrada de pessoas de chinelos e bermudas.A fiscalização ocorre na entrada do pavilhão, se não tiver adequado não poderá entrar.</p>
+                </div>
+            </div>
+            <ul style="margin-top: 50px;">
+                <li>
+                    <p>Importante esclarecer que não vende varejo, pois não podem fazer filetes e nem postas no mercado do peixe.</p>
+                </li>
+                <li>
+                    <p>O nome da associação responsável pelo mercado é a APPAERJ.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+        <div class="rodape">
+            <div class="rodape-completo">
+                <div class="rodape-logo">
+                    <img id="rodape-logo-governo" src="img/logo-secretaria.png">
+                </div>
+                <div class="rodape-logo">
+                    <img id="rodape-logo-proderj" src="img/tecnologia_proderj_negativo.png">
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
